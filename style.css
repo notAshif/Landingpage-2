@@ -1,0 +1,157 @@
+@font-face {
+    font-family: "mak";
+    src: url(fonst/MAK.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center_logo{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: "mak";
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #D4BDAC;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    line-height: 100px;
+    text-transform: uppercase;
+    color: #D4BDAC;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+.site_menu{
+    display: flex;
+}
+
+.site_menu li{
+    margin-left: 60px;
+    text-decoration: underline;
+}
+
+.showreel{
+    position: absolute;
+    font-size: 24px;
+    font-family: "mak";
+    color: #D4BDAC;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    text-decoration: underline;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "mak";
+    background: #9A7E6F;
+}
+
+.wrapper_img{
+    overflow: hidden;
+    position: absolute;
+    width: 30%;
+    height: 90vh;
+    top: 35% !important;
+    right: 18%;
+}  
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+}
+
+.shape_circle-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+}
+
+.shape_circle-2{
+    position: absolute;
+    top: 64%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 240px;
+    height: 240px;
+    background: #a83e0c;
+    border-radius: 100%;
+}
+.shape_circle-3{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 140px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #a83e0c;
+    border-radius: 100%;
+}
+
+.blocks{
+    display: flex;
+    font-size: 140px;
+    color: #D4BDAC;
+}
+
+@media screen and (max-width: 750px) {
+    .site_menu{
+        font-size: 15px;
+    }
+
+    .site_menu li{
+        margin-left: 10px;
+    }
+
+    .center_logo{
+        font-size: 18px;
+    }
+
+    .blocks{
+        font-size: 80px;
+    }
+    nav{
+        display: none;
+    }
+}
